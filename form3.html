@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            margin:0;
+            padding: 0;
+            background: url(https://th.bing.com/th/id/R.b860073138798a312487a9e1bdd290ee?rik=ZzLwSJTfKFzfKQ&riu=http%3a%2f%2fhdqwalls.com%2fwallpapers%2fmountains-minimalists-4k-vx.jpg&ehk=6UY7JHCZcX%2bWXhtg2Jt7RMWBLkG4qASWcA2H0sNKiek%3d&risl=&pid=ImgRaw&r=0);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container{
+            background-color: white;
+            float: right;
+            width: 40%;
+            height: 100vh;
+            
+        }
+        .form{
+            margin: 100px 40px;
+            
+        }
+        .form h1{
+            color: orangered;
+            font-weight: 400;
+            margin-bottom: 40px;
+        }
+        .form input,label{
+            margin: 5px;
+        }
+        .form div label{
+            margin:30px 0px;
+        }
+        .form  input[type="email"] , input[type="password"]{
+            
+            width: 100%;
+            height: 40px;
+            /* border:2px solid black; */
+            border-radius: 10px;
+            padding-left:10px ;
+            
+        }
+       .form .check{
+        margin: 10px;
+        font-size: 14.5px;
+        font-weight: 600;
+       }
+       .form.check input[type="checked"]{
+        accent-color: white;
+        vertical-align: bottom;
+        
+       }
+       .form button{
+        width: 100%;
+        height: 40px;
+        background-color: orangered;
+        border:none;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 14.5px;
+        font-weight: 600;
+       }
+       @media only screen and (max-width:760px){
+        
+       body{
+        background: none;
+
+       }
+       .container{
+        float:none;
+        margin-inline:20px;
+        width: 70vw;
+         
+          
+          
+       }
+       }
+       
+       
+       
+    </style>
+</head>
+<body>
+   <div class="container" >
+         <div class="form" >
+            <form action="" method="post">
+                    <h1>login form</h1>
+                    <div class="email" >
+                        <label for="email">Email:</label><br>
+                        <input type="email" name="email" id="email" placeholder="********@gmail.com" required >
+                    </div>
+                    <div class="password" >
+                        <label for="password">Password:</label><br>
+                        <input type="password" placeholder="password" required >
+                    </div>
+                    <div class="check" >
+                        <label for="check"><input type="checkbox">Authorize me</label>
+                    </div>
+                    <button type="submit">login</button>
+                    </div>
+            </form>
+         </div> 
+   </div> 
+</body>
+</html>
